@@ -53,3 +53,5 @@ To check if you have Node.js, npm and npx installed on your machine, run:
 ```bash
   gulp
 ```
+
+After this, you can check your compiled code on the CSS folder that is located inside of the dist folder that will be created on your project's root path
