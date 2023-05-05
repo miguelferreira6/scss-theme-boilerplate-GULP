@@ -1,0 +1,293 @@
+/*! Styles - Colors - Brand */
+
+.background {
+	@each $type, $value in $colors-brand {
+		&-#{$type}{
+			background-color: var(--color-#{$type});
+		}
+	}
+}
+
+///
+.text {
+	@each $type, $value in $colors-brand {
+		&-#{$type}{
+			color: var(--color-#{$type});
+		}
+	}
+}
+
+/*! Styles - Colors - Extended */
+
+.background {
+	@each $color, $variations in $colors-extended {
+		@each $type, $value in $variations {
+			&-#{$color} {
+				@if ($type == '') {
+					& {
+						background-color: var(--color-#{$color});
+					}
+				} @else {
+					&-#{$type} {
+						background-color: var(--color-#{$color}-#{$type});
+					}
+				}
+			}
+		}
+	}
+}
+
+///
+.text {
+	@each $color, $variations in $colors-extended {
+		@each $type, $value in $variations {
+			&-#{$color} {
+				@if ($type == '') {
+					& {
+						color: var(--color-#{$color});
+					}
+				} @else {
+					&-#{$type} {
+						color: var(--color-#{$color}-#{$type});
+					}
+				}
+			}
+		}
+	}
+}
+
+/*! Styles - Colors - Neutral */
+
+.background {
+	@each $type, $value in $colors-neutral {
+		&-neutral {
+			&-#{$type} {
+				background-color: var(--color-neutral-#{$type});
+			}
+		}
+	}
+}
+
+///
+.text {
+	@each $type, $value in $colors-neutral {
+		&-neutral-#{$type} {
+			color: var(--color-neutral-#{$type});
+		}
+	}
+}
+
+/*! Background and Text Colors used when IsLight parameter for Badge / Tag / UserInitials is True */
+.background-neutral-0,
+.background-neutral-1,
+.background-neutral-2,
+.background-neutral-3,
+.background-neutral-4 {
+    &-lightest {
+        background-color: var(--color-neutral-9);  
+    }
+}
+
+.background-neutral-5,
+.background-neutral-6,
+.background-neutral-7,
+.background-neutral-8,
+.background-neutral-9,
+.background-neutral-10 {
+    &-lightest {
+        background-color: var(--color-neutral-0);
+    }
+}
+
+.text-neutral-5-darker  { color: var(--color-neutral-5);  }
+.text-neutral-6-darker  { color: var(--color-neutral-6);  }
+.text-neutral-7-darker  { color: var(--color-neutral-7);  }
+.text-neutral-8-darker  { color: var(--color-neutral-8);  }
+.text-neutral-9-darker  { color: var(--color-neutral-9);  }
+.text-neutral-10-darker { color: var(--color-neutral-10); }
+
+/*! Background Transparent when used in IE11 to be more specific than CSSVars Polyfill */
+.ie11 .background-transparent { background-color: transparent; }
+
+/*! Styles - Colors - Semantic */
+.background {
+	@each $type, $value in $colors-semantic {
+		&-#{$type} {
+			background-color: var(--color-#{$type});
+		}
+	}
+}
+
+///
+.text {
+	@each $type, $value in $colors-semantic {
+		&-#{$type} {
+			color: var(--color-#{$type});
+		}
+	}
+}
+
+/*! Styles - Space - Padding */
+.padding {
+	@each $type, $value in $sizes {
+		&-#{$type} {
+			padding: var(--space-#{$type});
+		}
+
+		@each $box-side in $box-sides {
+			&-#{$box-side}-#{$type} {
+				padding-#{$box-side}: var(--space-#{$type});
+			}
+		}
+
+		&-x-#{$type} {
+			padding-left: var(--space-#{$type});
+			padding-right: var(--space-#{$type});
+		}
+
+		&-y-#{$type} {
+			padding-bottom: var(--space-#{$type});
+			padding-top: var(--space-#{$type});
+		}
+	}
+
+	&-auto {
+		padding: 0 auto;
+	}
+}
+
+/*! Styles - Space - Margin */
+.margin {
+	@each $type, $value in $sizes {
+		&-#{$type} {
+			margin: var(--space-#{$type});
+		}
+
+		@each $box-side in $box-sides {
+			&-#{$box-side}-#{$type} {
+				margin-#{$box-side}: var(--space-#{$type});
+			}
+		}
+
+		&-x-#{$type} {
+			margin-left: var(--space-#{$type});
+			margin-right: var(--space-#{$type});
+		}
+
+		&-y-#{$type} {
+			margin-bottom: var(--space-#{$type});
+			margin-top: var(--space-#{$type});
+		}
+	}
+
+	&-auto {
+		margin: 0 auto;
+	}
+}
+
+/*! Styles - Border Radius */
+.border-radius {
+	@each $type, $value in $border-radius-types {
+		// Generated - Eg: .border-radius-none
+		&-#{$type} {
+			border-radius: var(--border-radius-#{$type});
+		}
+
+		@each $box-corner in $box-corners {
+			// Generated - Eg: .border-radius-top-left-none
+			&-#{$box-corner}-#{$type} {
+				border-#{$box-corner}-radius: var(--border-radius-#{$type});
+			}
+		}
+
+		@each $border-side, $border-corner1, $border-corner2 in $border-radius-box-sides {
+			// Generated - Eg: .border-radius-top-none
+			&-#{$border-side}-#{$type} {
+				border-#{$border-side}-#{$border-corner1}-radius: var(--border-radius-#{$type});
+				border-#{$border-side}-#{$border-corner2}-radius: var(--border-radius-#{$type});
+			}
+		}
+	}
+}
+
+/*! Typography - Font Size */
+.font-size {
+	@each $type, $value in $font-sizes {
+		&-#{$type} {
+			font-size: var(--font-size-#{$type});
+		}
+	}
+}
+
+/*! Typography - Font Weight */
+.font {
+	@each $type, $value in $font-weights {
+		&-#{$type} {
+			font-weight: var(--font-#{$type});
+		}
+	}
+}
+
+/*! Typography - Alignment Types */
+.text-align {
+	@each $type, $value in $text-alignments {
+		&-#{$type} {
+			text-align: var(--text-align-#{$type});
+		}
+	}
+}
+
+.heading7 {
+    color: var(--color-neutral-10);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-semi-bold);
+    line-height: 1.25;
+
+    .tablet & { font-size: calc(var(--font-size-base) - 1px); }
+    .phone &  { font-size: calc(var(--font-size-base) - 2px); }
+}
+
+/*! Typography - Font Family */
+
+.font-family{
+	&-lato{
+		font-family: "Lato", sans-serif;
+	}
+
+	&-karma{
+		font-family: "Karma", serif;
+	}
+}
+
+/*! Utils - Flexbox */
+
+.display-flex{ display: flex; }
+
+.align-items{
+	&-flex-start{ align-items: flex-start; }
+	&-center{ align-items: center; }
+	&-flex-end{ align-items: flex-end; }
+	&-baseline{	align-items: baseline; }
+	&-stretch{	align-items: stretch; }
+}
+
+.justify-content{
+	&-flex-start{ justify-content: flex-start; }
+	&-center{ justify-content: center; }
+	&-flex-end{ justify-content: flex-end; }
+	&-space-around{ justify-content: space-around; }
+	&-space-between{ justify-content: space-between; }
+	&-space-evenly{ justify-content: space-evenly; }
+}
+
+.flex{
+	&-wrap{ flex-wrap: wrap; }
+	&-no-wrap{ flex-wrap: no-wrap; }
+}
+
+/*! Utils - White Space */
+
+.white-space{
+	&-no-wrap{ white-space: nowrap; }
+	&-pre-wrap{ white-space: pre-warp; }
+}

@@ -1,0 +1,81 @@
+/* ===================================================================== */
+/*  $0 - Root - CSS Variables                                            */
+/* ===================================================================== */
+:root {
+
+    /*! Color - Brand */
+	@each $type, $value in $colors-brand {
+		--color-#{$type}: #{$value};
+	}
+
+    /*! Color - Neutral */
+	@each $type, $value in $colors-neutral {
+		--color-neutral-#{$type}: #{$value};
+	}
+
+	/*! Color - Semantic */
+	@each $type, $value in $colors-semantic {
+		--color-#{$type}: #{$value};
+	}
+
+    /*! Color - Extended Palette */
+	@each $color, $variations in $colors-extended {
+		@each $type, $value in $variations {
+			@if ($type == '') {
+				--color-#{$color}: #{$value};
+			} @else {
+				--color-#{$color}-#{$type}: #{$value};
+			}
+		}
+	}
+	
+	/*! Color - Accessibility */
+	@each $type, $value in $colors-accessibility {
+		--color-focus-#{$type}: #{$value};
+	}
+
+	/*! Border - Border Size */
+	@each $type, $value in $border-size {
+		--border-size-#{$type}: #{$value};
+	}
+
+	/*! Border - Border Radius */
+	@each $type, $value in $border-radius-types {
+		--border-radius-#{$type}: #{$value};
+	}
+
+    /*! Space - Sizes */
+    @each $type, $value in $sizes {
+		--space-#{$type}: #{$value};
+	}
+
+    /*! Elevation / Shadow */
+	@each $type, $value in $shadow-types {
+		--shadow-#{$type}: #{$value};
+	}
+
+	/*! Typography - Size */
+	@each $type, $value in $font-sizes {
+		--font-size-#{$type}: #{$value};
+	}
+
+	/*! Typography - Weight */
+	@each $type, $value in $font-weights {
+		--font-#{$type}: #{$value};
+	}
+
+	/*! Typography - Alignment Types */
+	@each $type, $value in $text-alignments {
+		--text-align-#{$type}: #{$value};
+	}
+
+    /*! App Settings */
+    --header-color: #{$header-color};
+    --header-size: #{$header-size};
+    --side-menu-size: #{$side-menu-size};
+    --side-menu-size-tablet: #{$side-menu-size-tablet};
+    --footer-size: #{$footer-size};
+
+    --color-background-body: #{$color-background-body};
+    --color-background-login: #{$color-background-login};
+}

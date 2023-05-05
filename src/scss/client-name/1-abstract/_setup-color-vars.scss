@@ -1,0 +1,178 @@
+///----------------------------------------------------------------------------
+///	Color - Brand                                                               
+///----------------------------------------------------------------------------
+
+$colors-brand: 
+'primary' #377bb0, 
+'primary-hover' #16649f,
+'primary-selected' #004d8e,
+'primary-light' #e3ecfa,
+'primary-lighter' #e3ecfa, 
+'primary-lightest' #e8f1f9,
+'secondary' #ce8b37,
+'secondary-lighter' #ce8b37,
+'secondary-lightest' #ce8b37;
+
+///----------------------------------------------------------------------------
+///	Color - Neutral                                                             
+///----------------------------------------------------------------------------
+
+$colors-neutral: 
+'0' #ffffff,
+'1' #f8f9fa,
+'2' #f1f3f5,
+'3' #e9ecef,
+'4' #dee2e6,
+'5' #ced4da,
+'6' #adb5bd,
+'7' #6a7178,
+'8' #4f575e,
+'9' #202122,
+'10' #101213;
+
+
+///----------------------------------------------------------------------------
+///	Color - Semantic                                                            
+///----------------------------------------------------------------------------
+
+$colors-semantic:
+'error' #DC2020, 'error-light' #FCEAEA,
+'warning' #E9A100, 'warning-light' #FDF6E5,
+'success' #29823B, 'success-light' #EAF2EB,
+'info' #1068EB, 'info-light' #017AAD;
+
+
+///----------------------------------------------------------------------------
+///	Color - Extended                                                            
+///	- The '' (empty string) is needed in order to set the default color value.  
+///----------------------------------------------------------------------------
+
+$colors-extended:
+    'red'
+		(
+			'lightest' #F9EAEA,
+			'lighter' #E9A9A9,
+			'light' #D96A6A,
+			'' #C92A2A,
+			'dark' #AB2323,
+			'darker' #8C1D1D,
+			'darkest' #6E1717
+		),
+	'orange'
+		(
+			'lightest' #FEF0E6,
+			'lighter' #FBC29B,
+			'light' #F99451,
+			'' #F76707,
+			'dark' #D25705,
+			'darker' #AC4704,
+			'darkest' #873803
+		),
+	'yellow'
+		(
+			'lightest' #FEF5E6,
+			'lighter' #FBD899,
+			'light' #e6b980,
+			'' #F59F00,
+			'dark' #D08700,
+			'darker' #AB6E00,
+			'darkest' #865700
+		),
+	'lime'
+		(
+			'lightest' #F1F8E8,
+			'lighter' #C7E2A1,
+			'light' #9DCD5C,
+			'' #74B816,
+			'dark' #629C12,
+			'darker' #50800F,
+			'darkest' #3F650C
+		),
+	'green'
+		(
+			'lightest' #EBF7ED,
+			'lighter' #AFE0B7,
+			'light' #73C982,
+			'' #37B24D,
+			'dark' #2E9741,
+			'darker' #267C35,
+			'darkest' #1E612A
+		),
+	'teal'
+		(
+			'lightest' #E6F2EE,
+			'lighter' #9CCBBD,
+			'light' #52A58C,
+			'' #087F5B,
+			'dark' #066C4D,
+			'darker' #05583F,
+			'darkest' #044531
+		),
+	'cyan'
+		(
+			'lightest' #E7F2F4,
+			'lighter' #9ECCD3,
+			'light' #56A6B2,
+			'' #0D8091,
+			'dark' #0B6C7B,
+			'darker' #095965,
+			'darkest' #07464F
+		),
+	'blue'
+		(
+			'lightest' #E8F1F9,
+			'lighter' #A3C9EA,
+			'light' #5FA1DA,
+			'' #1A79CB,
+			'dark' #1666AC,
+			'darker' #12548D,
+			'darkest' #0E426F
+		),
+	'indigo'
+		(
+			'lightest' #ECEFFD,
+			'lighter' #B3C0F7,
+			'light' #7B92F1,
+			'' #4263EB,
+			'dark' #3854C7,
+			'darker' #2E45A4,
+			'darkest' #243681
+		),
+	'violet'
+		(
+			'lightest' #F0EDFC,
+			'lighter' #C5B5F5,
+			'light' #9B7FEE,
+			'' #7048E8,
+			'dark' #5F3DC5,
+			'darker' #4E32A1,
+			'darkest' #3D277F
+		),
+	'grape'
+		(
+			'lightest' #F7ECF9,
+			'lighter' #DEB1E9,
+			'light' #C678D9,
+			'' #AE3EC9,
+			'dark' #9434AB,
+			'darker' #792B8C,
+			'darkest' #5F226E
+		),
+	'pink'
+		(
+			'lightest' #FAEBF0,
+			'lighter' #EEADC4,
+			'light' #E27098,
+			'' #D6336C,
+			'dark' #B62B5B,
+			'darker' #95234B,
+			'darkest' #751C3B
+		);
+
+///----------------------------------------------------------------------------
+///	Color - Accessibility                                                            
+///----------------------------------------------------------------------------
+
+$colors-accessibility:
+'inner' #001E41,
+'outer' #FFD337;
