@@ -6,3 +6,4 @@ package-lock.json
 .stylelintrc.json
 bash.exe.stackdump
 npm-shrinkwrap.json
+package.json
