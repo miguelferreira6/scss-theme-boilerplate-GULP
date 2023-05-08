@@ -30,8 +30,6 @@
 }
 
 /*      !Changes the color of the placeholder element using the ::placeholder pseudo-element        */
-
-
 @mixin placeholder($phr) {
     &::-webkit-input-placeholder { color: $phr; }
     &:-moz-placeholder { color: $phr; }
