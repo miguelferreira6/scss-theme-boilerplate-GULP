@@ -1,4 +1,4 @@
-/*      !Base @Font-face constructor, font files needed, ttf, woff and woff2.       */
+///!Base @Font-face constructor, font files needed, ttf, woff and woff2.
 @mixin import-font-face($fontFamily, $fileName, $fontWeight, $path){
     @font-face {
         font-display: swap;
@@ -11,7 +11,7 @@
     }
 }
 
-/*      !Truncates text at a specific number of lines        */
+///      !Truncates text at a specific number of lines
 @mixin line-clamp($numlines){
     &{
         -webkit-box-orient: vertical;
@@ -21,7 +21,7 @@
     }
 }
 
-/*      !Centers an element vertically and horizontally using absolute positioning      */
+///!Centers an element vertically and horizontally using absolute positioning
 @mixin absolute-center(){
     position: absolute;
     top: 50%;
@@ -29,7 +29,7 @@
     transform: translate(-50%, -50%);
 }
 
-/*      !Changes the color of the placeholder element using the ::placeholder pseudo-element        */
+///!Changes the color of the placeholder element using the ::placeholder pseudo-element
 @mixin placeholder($phr) {
     &::-webkit-input-placeholder { color: $phr; }
     &:-moz-placeholder { color: $phr; }
