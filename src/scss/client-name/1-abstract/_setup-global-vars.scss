@@ -4,18 +4,18 @@
 
 ///Header Configurations
 $header-color: var(--color-neutral-0);
-$header-size: rem(74);
+$header-size: rem(74px);
 
 ///SideMenu Configurations
-$side-menu-size: rem(260);
-$side-menu-size-tablet: rem(48);
+$side-menu-size: rem(260px);
+$side-menu-size-tablet: rem(48px);
 
 ///Sidebar Configurations
-$side-sidebar-size-tablet: rem(360);
-$side-sidebar-size: rem(450);
+$side-sidebar-size-tablet: rem(360px);
+$side-sidebar-size: rem(450px);
 
 /// Footer Height Configurations
-$footer-size: rem(480);
+$footer-size: rem(480px);
 
 
 ///App Background Color Configurations
@@ -55,15 +55,15 @@ $box-corners:
 /// Border Sizes
 $border-size:
 'none' 0,
-'s' rem(1),
-'m' rem(2),
-'l' rem(3);
+'s' rem(1px),
+'m' rem(2px),
+'l' rem(3px);
 
 /// Border Radius
 $border-radius-types:
 'none' 0,
-'soft' rem(4),
-'rounded' rem(100),
+'soft' rem(4px),
+'rounded' rem(100px),
 'circle' 100%;
 
 /// Border Radius BoxSides
@@ -79,13 +79,13 @@ $border-radius-box-sides:
 /// Predefined spaces / sizes
 $sizes:
 'none' 0,
-'xs' rem(4),
-'s' rem(8),
-'base' rem(16),
-'m' rem(24),
-'l' rem(32),
-'xl' rem(40),
-'xxl' rem(48);
+'xs' rem(4px),
+'s' rem(8px),
+'base' rem(16px),
+'m' rem(24px),
+'l' rem(32px),
+'xl' rem(40px),
+'xxl' rem(48px);
 
 ///----------------------------------------------------------------------------
 /// Shadows																
