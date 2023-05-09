@@ -247,20 +247,7 @@
     .phone &  { font-size: calc(var(--font-size-base) - 2px); }
 }
 
-/*! Typography - Font Family */
-
-.font-family{
-	&-lato{
-		font-family: "Lato", sans-serif;
-	}
-
-	&-karma{
-		font-family: "Karma", serif;
-	}
-}
-
 /*! Utils - Flexbox */
-
 .display-flex{ display: flex; }
 
 .align-items{
