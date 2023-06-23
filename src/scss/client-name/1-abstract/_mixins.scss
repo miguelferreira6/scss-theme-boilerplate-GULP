@@ -11,7 +11,7 @@
     }
 }
 
-///      !Truncates text at a specific number of lines
+///!Truncates text at a specific number of lines
 @mixin line-clamp($numlines){
     &{
         -webkit-box-orient: vertical;
