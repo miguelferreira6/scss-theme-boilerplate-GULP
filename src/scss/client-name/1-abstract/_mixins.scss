@@ -23,10 +23,12 @@
 
 ///!Centers an element vertically and horizontally using absolute positioning
 @mixin absolute-center(){
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    &{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 ///!Changes the color of the placeholder element using the ::placeholder pseudo-element
